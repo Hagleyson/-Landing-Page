@@ -1,0 +1,167 @@
+section.sobre{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.servicos{
+	width: 50%;
+	height: 300px;
+	padding: 40px;
+	background-color: #576f94;
+	text-align: right;
+}
+div.servicos .container{
+	width: 100%;
+	padding: 10px 2%;
+	display: flex;
+	justify-content: space-between;
+}
+div.servicos .img-servicos{
+	width: 50%;
+	padding-top: 30%;
+	background-image: url(../img/desktop.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+div.servicos .descricao-servicos{
+	width: 60%;
+	text-align: center;
+}
+div.servicos div.descricao-servicos > h2{
+	color: white;
+	font-weight: lighter;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: underline;
+}
+div.servicos ul{
+	list-style-position: inside;
+	text-align: center;
+	padding: 10px 2%;
+}
+div.servicos ul li{
+	color: white;
+	font-size: 20px;
+}
+div.servicos div.botton-servicos{
+	background-color: #86bcdb;
+    width: 165px;
+    height: 44px;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+}
+div.servicos div.botton-servicos:hover{
+	border: 1px solid #eee;
+}
+div.equipe{
+	width: 50%;
+	height: 300px;
+	background-color: #bfcadb;	
+	padding:10px;
+}
+div.equipe .container{
+	width: 100%;
+	padding: 20px 2%;
+}
+div.equipe .prof{
+	width: 80%;
+	margin: 0 auto;
+	height: 200px;
+	padding: 20px 2%;	
+}
+.prof-description{
+	width: 100%;
+	margin-left: 10px;
+	display: flex;
+}
+.img-prof{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	background-image: url(../img/eu.PNG);
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.name-prof{
+	margin-left: 10px;
+}
+.name-prof h2{
+	color: #232323;
+	font-weight:lighter; 
+	text-decoration: underline;
+	font-size: 25px;
+}
+.name-prof p{
+	color: #232323;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 25px;
+
+}
+.texto-profissional{
+	width: 100%;
+	padding: 10px 2%;
+
+}
+.texto-profissional p{
+	color: #232323;
+	font-size: 18px;
+	text-align: justify;
+	font-weight: lighter;
+}
+section.porenquanto{
+	width: 100%;
+	height: 20px;
+}
+@media screen and (max-width:836px){
+	div.servicos{
+		width: 100%;
+	}
+	div.equipe{
+		width: 100%;
+	}
+
+}
+@media screen and (max-width: 500px){
+	div.servicos{
+		height: auto;
+		padding: 10px 2%;
+		text-align: center;
+	}
+	div.servicos .descricao-servicos{
+		width: 100%;
+	}
+	div.servicos .img-servicos{
+		display: none;
+	}
+	div.servicos ul li{
+		font-size: 15px;
+	}
+	div.equipe{
+		height: auto;		
+	}
+	div.equipe .prof{
+		width: 100%;
+		height: auto;
+	}
+	.prof-description{
+		display: block;
+		margin:0;
+	}
+	.img-prof{
+		width: 90%;
+		padding-top:90%;
+		margin:0 auto;
+		display: block;
+		border-radius: 2px;
+
+	}
+	
+}
